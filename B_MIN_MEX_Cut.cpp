@@ -8,16 +8,10 @@ int main(){
 
   while(t--){
 
-  int nt;
-  long long tt;
-  cin>>nt;
-  cin>>tt;
+    string s;
+    cin>>s;
 
-  string s = to_string(tt);
-  
-  
-  
-  cout<<endl;
+    
 }
 return 0;
 }
