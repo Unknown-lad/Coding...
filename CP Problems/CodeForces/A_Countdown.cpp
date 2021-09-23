@@ -15,8 +15,6 @@ int main(){
   cin>>nt;
   cin>>s;
 
-  
-
   long long c=0;
   for(int i=0;i!=nt-1;i++){
     c+=(s[i]-'0');
