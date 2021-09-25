@@ -1,0 +1,1 @@
+//to get the number which is non-negetive and present 
