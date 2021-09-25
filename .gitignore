@@ -1,5 +1,5 @@
 #the extension part of CPH Judge
-/cph
+./cph
 
 #the vsode files
-/vscode
+./vscode
