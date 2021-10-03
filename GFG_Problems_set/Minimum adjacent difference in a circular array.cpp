@@ -3,10 +3,18 @@ using namespace std;
 
 class Sol{
     public:
-    int minAdDiff(int a[],int n){
-        int sum=0,min=0,lst=0;
+    int minAdDiff(int arr[],int n){
+        if(n<2){
+            return 0;
+        }
 
-        
+        int res = abs(arr[0]-arr[1]);
+        for(long long i=2;i<n;i++){
+            res = min(res,abs(arr[i]-arr[i-1]));
+            res = min(res,abs(arr[0]-arr[n-1]));
+        }
+
+        return res;
     }
 };
 
