@@ -8,20 +8,27 @@ class Solution
     {
         // code here.. 
         int mid;
-        if(sizeOfStack%2==0)
+        if(sizeOfStack%2==0){
             mid=(sizeOfStack/2);
-        else
+        }else{
             mid = (sizeOfStack/2)+1;
+        }
 
-        stack<int> st;
-        for(int i=0;i<sizeOfStack;i++){
-            st.push(s.top());
+        int arr[sizeOfStack];
+        for(int i=sizeOfStack-1;i>=0;i--){
+            arr[i]=s.top();
             s.pop();
         }
         
-        while(!st.empty()){
-            cout<<st.top()<<" ";
-            st.pop();
+        // cout<<arr[mid-1]<<endl;
+        for(int i=mid-1;i<sizeOfStack;i++){
+            arr[i]=arr[i+1];
+        }
+
+        // for(int i=0;i<sizeOfStack-1;i++)
+        // cout<<arr[i]<<" ";
+        for(int i=0;i<sizeOfStack-1;i++){
+            s.push(arr[i]);
         }
     }
 };
