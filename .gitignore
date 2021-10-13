@@ -31,8 +31,8 @@
 *.out
 *.app
 
-#vs folder
-./.vscode
 
-#cp folder
-./Competitive Programming Prerequisite
+#pending.. folder
+./cp_pre/
+./LeetCode/
+./DSA 450/
