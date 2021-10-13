@@ -1,5 +1,5 @@
-#the extension part of CPH Judge
-./cph
-
-#the vsode files
 ./vscode
+
+./GFG_Problem_set/.cph
+
+./CP Problems/.cph
