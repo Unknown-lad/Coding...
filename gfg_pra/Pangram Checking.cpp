@@ -7,18 +7,18 @@ class Solution
     bool checkPangram (string &s) {
         // your code here
 
-        set<char> st;
+        unordered_set<char> st;
 
         for(int i=0;i<s.length();i++){
-            if(s[i]>='A' and s[i]<='z'){
+            if(toupper(s[i])){
+                s[i]=tolower(s[i]);
                 st.insert(s[i]);
             }
         }
-
-        if(st.size()==26){
+        
+        if(st.size()>=27){
             return true;
         }
-
         return false;
     }
 
