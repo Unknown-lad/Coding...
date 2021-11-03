@@ -12,8 +12,11 @@ int main(){
 
     for(auto i : s){
         m[i]++;
-        vec.push_back(m[i]);
     }
 
-    
+    for(auto i : m){
+        cout<<i.second<<" ";
+    }
+
+    return 0;
 }
