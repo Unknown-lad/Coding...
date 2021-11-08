@@ -14,7 +14,22 @@ int main(){
 
     unordered_map<int,int> m;
 
-    int sum=0;
+    int sum=0,count=0;
+    for(int i=0;i<n;i++){
+        sum+=arr[i];
+
+        if(sum==k){
+            count++;
+        }
+
+        if(m.find(sum-k)!=m.end()){
+            count+=(m[sum-k]);
+        }
+
+        m[sum]++;
+    }
+
+    cout<<count<<endl;
     
     return 0;
 }
